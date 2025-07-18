@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V3WP - Hakkımda</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-color: #0f0f0f;
+      --text-color: #fff;
+      --primary-color: #f39c12;
+      --secondary-color: #1a1a1a;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    body.light-theme {
+      --bg-color: #f9f9f9;
+      --text-color: #222;
+      --primary-color: #e67e22;
+      --secondary-color: #e0e0e0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      padding: 1rem 2rem;
+      background-color: var(--secondary-color);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .profil-resmi {
+      display: block;
+      max-width: 360px;
+      margin: 0 auto 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .profil-resmi:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+
+    .tanitim {
+      background: var(--secondary-color);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+      margin-top: 2rem;
+    }
+
+    .diller {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .dil {
+      background: var(--secondary-color);
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .dil:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(243, 156, 18, 0.4);
+    }
+
+    .insta-button, .discord-button {
+      display: inline-block;
+      color: white;
+      font-weight: bold;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+      letter-spacing: 1px;
+      margin: 0.5rem;
+    }
+    .insta-button {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    .insta-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(255,156,18,0.4);
+    }
+    .discord-button {
+      background: linear-gradient(45deg, #5865F2, #404EED);
+    }
+    .discord-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(88,101,242,0.5);
+    }
+
+    #theme-toggle {
+      cursor: pointer;
+      background: var(--primary-color);
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-weight: bold;
+      color: var(--bg-color);
+      transition: background 0.3s ease, color 0.3s ease;
+      user-select: none;
+    }
+    #theme-toggle:hover {
+      background: #f1c40f;
+      color: #000;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      color: var(--text-color);
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>V3WP</h1>
+    <nav>
+      <a href="v_3_wp_blog_site - Kopya.html">Ana Sayfa</a>
+      <button id="theme-toggle" aria-label="Tema değiştirici">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <img src="pro.jpg" alt="Profil Fotoğrafı" class="profil-resmi" />
+    
+    <div class="tanitim">
+      <p><strong>Ben V3WP!</strong> Kod yazmayı seven, tasarım konusunda gözü yükseklerde olan, teknolojiyi tutkuyla takip eden biriyim. Web tasarımı, kullanıcı arayüzü, etkileşimli deneyimler ve yaratıcı içerikler üretmek benim için sadece bir iş değil, bir yaşam tarzı. 💻✨</p>
+      <p>Detaylara önem veririm, sade ama güçlü işler ortaya koymayı severim. Web siten varsa güzelleştiririm, yoksa sıfırdan kurarım. Her zaman daha iyisini yapmaya çalışırım.</p>
+    </div>
+
+    <h3 style="text-align: center; margin-top: 2rem;">Bildiğim Diller & Teknolojiler</h3>
+    <div class="diller">
+      <div class="dil">HTML</div>
+      <div class="dil">CSS</div>
+      <div class="dil">JavaScript</div>
+      <div class="dil">Python</div>
+      <div class="dil">PHP</div>
+      <div class="dil">MySQL</div>
+      <div class="dil">React</div>
+      <div class="dil">Node.js</div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="https://instagram.com/cahitoner06" target="_blank" class="insta-button" rel="noopener noreferrer">Instagram Profilime Git</a>
+      <a href="https://discord.gg/daBzMheU" target="_blank" class="discord-button" rel="noopener noreferrer">Discord Profilime Katıl</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 V3WP | Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      if(document.body.classList.contains('light-theme')) {
+        themeToggle.textContent = '🌙';
+      } else {
+        themeToggle.textContent = '☀️';
+      }
+    });
+  </script>
+</body>
+</html>
